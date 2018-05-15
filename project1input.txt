@@ -1,0 +1,9 @@
+100									!nx; 	    resolution in x direction
+100  								!ny; 	    resolution in y direction
+0.25 								!gamma;	    value of gamma to measure time-step size
+0.1 			 					!Tmax; 	    final time
+1.0d0                               !alpha;     diffusion coefficient
+1.0d-4                              !tol;       tolerance for iterative solvers
+1.2d0                               !omega;     relaxation parameter for SOR iterative solver (optimized value = 1.08-1.28)
+0.5                                 !probe;     value to calculate data on a point in space
+0						     	    !ischeme; 	[0]Explicit, [1]Implicit-Gauss-Seidel(GS) solver, [2]Implicit-SOR, [3]Both explicit and implicit (GS), [4]Both explicit and implicit (SOR), [5]Approximate factorization
