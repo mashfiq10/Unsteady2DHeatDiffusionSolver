@@ -361,8 +361,6 @@ print*,"-------------------------------"
 print*,"Total number of time iterations = ", c
 print*,"-------------------------------"
 
-
-
 else           !implicits
 
 open(12, file="implicit.plt")
@@ -414,7 +412,6 @@ print*,"-------------------------------"
 !$$$$$$ print*,"------------------------"
 
 end if
-
 
 100 format(a16,i8,a4,i8,a10,f10.4,a3)
 end
@@ -542,8 +539,7 @@ by = gamma
 
 !x-sweep to compute intermediate values:
 do j=1,ny-1
-
-  
+ 
 	!Build coefficient matrix:
 	allocate(t(1:nx-1),d(1:nx-1),m(1:nx-1),r(1:nx-1),q(1:nx-1))
 
@@ -578,7 +574,6 @@ end do
 !y-sweep to compute final solution:
 do i=1,nx-1
 
-  
 	!Build coefficient matrix:
 	allocate(t(1:ny-1),d(1:ny-1),m(1:ny-1),r(1:ny-1),q(1:ny-1))
 
